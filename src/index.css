@@ -1,0 +1,952 @@
+    body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    
+    code {
+        font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+    }
+    /* ------- Reset Bootstrap Classes ------- */
+    
+    html,
+    body {
+        height: 100%;
+    }
+    
+    #root {
+        height: 100%;
+    }
+    
+    .container-fluid {
+        padding: 0;
+        display: block;
+        min-height: 100%;
+    }
+    
+    .col,
+    .col-1,
+    .col-10,
+    .col-11,
+    .col-12,
+    .col-2,
+    .col-3,
+    .col-4,
+    .col-5,
+    .col-6,
+    .col-7,
+    .col-8,
+    .col-9,
+    .col-auto,
+    .col-lg,
+    .col-lg-1,
+    .col-lg-10,
+    .col-lg-11,
+    .col-lg-12,
+    .col-lg-2,
+    .col-lg-3,
+    .col-lg-4,
+    .col-lg-5,
+    .col-lg-6,
+    .col-lg-7,
+    .col-lg-8,
+    .col-lg-9,
+    .col-lg-auto,
+    .col-md,
+    .col-md-1,
+    .col-md-10,
+    .col-md-11,
+    .col-md-12,
+    .col-md-2,
+    .col-md-3,
+    .col-md-4,
+    .col-md-5,
+    .col-md-6,
+    .col-md-7,
+    .col-md-8,
+    .col-md-9,
+    .col-md-auto,
+    .col-sm,
+    .col-sm-1,
+    .col-sm-10,
+    .col-sm-11,
+    .col-sm-12,
+    .col-sm-2,
+    .col-sm-3,
+    .col-sm-4,
+    .col-sm-5,
+    .col-sm-6,
+    .col-sm-7,
+    .col-sm-8,
+    .col-sm-9,
+    .col-sm-auto,
+    .col-xl,
+    .col-xl-1,
+    .col-xl-10,
+    .col-xl-11,
+    .col-xl-12,
+    .col-xl-2,
+    .col-xl-3,
+    .col-xl-4,
+    .col-xl-5,
+    .col-xl-6,
+    .col-xl-7,
+    .col-xl-8,
+    .col-xl-9,
+    .col-xl-auto {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .row {
+        margin: 0;
+    }
+    
+    ul,
+    li {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    
+    h1,
+    .h1 {
+        font-size: 2rem;
+    }
+    
+    h2,
+    .h2 {
+        font-size: 1.5rem;
+    }
+    
+    h3,
+    .h3 {
+        font-size: 1rem;
+    }
+    
+    h4,
+    .h4 {
+        font-size: 0.8rem;
+    }
+    
+    h5,
+    .h5 {
+        font-size: 0.5rem;
+    }
+    
+    h6,
+    .h6 {
+        font-size: 0.3rem;
+    }
+    
+    h1 {
+        margin-bottom: 3rem!important;
+    }
+    
+    p {
+        margin: 0;
+        font-size: 1rem;
+    }
+    
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 0;
+        font-weight: 400;
+    }
+    
+    a {
+        margin: 0;
+        cursor: pointer;
+        text-decoration: none !important;
+        font-weight: 400;
+    }
+    
+    button {
+        border: none;
+        color: inherit;
+        background-color: inherit;
+    }
+    
+    .paqc-container {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        min-height: 100vh;
+        height: 100%;
+        background-color: #e4e3e2;
+    }
+    /* ------- Header Classes ------- */
+    /* Small Screens */
+    
+    .paqc-main-header-wrapper {
+        min-height: 45px;
+        background-color: #efeeee;
+        border-bottom: 2px solid #cccccc;
+        box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.3);
+        -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.3);
+        z-index: 1;
+    }
+    
+    .paqc-main-logo {
+        background-image: url(assets/img/main-logo-sm-mb.jpg);
+        background-size: contain;
+        height: 45px;
+        width: 45px;
+    }
+    /* Medium Screens */
+    
+    @media (min-width: 768px) {
+        .paqc-main-header-wrapper {
+            min-height: 55px;
+        }
+        .paqc-main-logo {
+            background-image: url(assets/img/main-logo-sm.jpg);
+            height: 55px;
+            width: 60px;
+        }
+    }
+    /* ------- Navigation Classes ------- */
+    /* Small Screens */
+    
+    .paqc-main-navigation-wrapper {
+        order: 1;
+        position: fixed;
+        bottom: 0;
+        z-index: 100;
+        background-color: #117a8a;
+        border-top: 2px solid #b4dd1f;
+    }
+    
+    .paqc-main-navigation-wrapper ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .paqc-main-navigation-wrapper li {
+        text-align: center;
+        text-decoration: none;
+    }
+    
+    .paqc-main-navigation-wrapper a {
+        padding: 1.2rem 1.5rem;
+        height: auto;
+        color: #dbdbdb;
+    }
+    
+    .paqc-main-navigation-wrapper a:hover {
+        background-color: #0d5c68;
+    }
+    
+    .paqc-main-navigation-wrapper p {
+        font-size: 0.75rem;
+        display: none;
+    }
+    
+    .paqc-main-navigation-wrapper i {
+        font-size: 1.5em;
+    }
+    
+    .active,
+    .active:hover {
+        background-color: #1d98a8 !important;
+        color: #0d5c68 !important;
+    }
+    /* Medium Screen */
+    
+    @media (min-width: 768px) {
+        .paqc-main-navigation-wrapper {
+            position: relative;
+            min-height: 100%;
+            max-width: 60px;
+            border: none;
+        }
+        .paqc-main-navigation-wrapper ul {
+            flex-direction: column;
+        }
+        .paqc-main-navigation-wrapper a {
+            padding: 0.85rem 0 0.75rem;
+        }
+        .paqc-main-navigation-wrapper p {
+            display: block;
+        }
+        .paqc-main-navigation-wrapper i {
+            margin-bottom: 0.4rem;
+        }
+    }
+    /* ------- Main Content Classes ------- */
+    /* Small Screens */
+    
+    .paqc-main-content-wrapper {
+        order: 2;
+    }
+    
+    .paqc-content-wrapper {
+        border: 1px solid #cccccc;
+        border-bottom: 2px solid #45b5c6;
+        background-color: #efeeee;
+        margin-bottom: 0.5rem;
+        padding: 1rem 0rem;
+    }
+    
+    .paqc-col {
+        position: relative;
+        -webkit-box-flex: 0;
+        -ms-flex: 1 0 0;
+        flex: 1 0 0;
+        min-height: 100%;
+    }
+    /* Medium Screens */
+    
+    @media (min-width: 768px) {
+        .paqc-main-content-wrapper {
+            padding: 0.8rem;
+        }
+        .paqc-content-wrapper {
+            border: 1px solid #cccccc;
+            border-top: 2px solid #45b5c6;
+        }
+    }
+    /* ------- Sidebar Classes ------- */
+    /* Small Screens */
+    
+    .paqc-main-sidebar-wrapper {
+        width: 100%;
+        order: 1;
+        background-color: #17a2b8;
+        border-bottom: 2px solid #54c6cc;
+    }
+    
+    .paqc-sidebar-features {
+        padding: 0.8rem;
+    }
+    /* Medium Screens */
+    
+    @media (min-width: 768px) {
+        .paqc-main-sidebar-wrapper {
+            order: 3;
+            min-height: inherit;
+            width: 250px;
+            border-left: 2px solid #54c6cc;
+            border-bottom: none;
+        }
+    }
+    /* ------- Sidebar Calendar Classes ------- */
+    /* Small Screens */
+    
+    .paqc-calendar-wrapper {
+        width: 200px;
+        height: auto;
+        position: relative;
+        background-color: #4aadb9;
+        text-align: center;
+        padding: 4rem 3rem;
+        vertical-align: middle;
+        align-items: center;
+    }
+    
+    @media (min-width: 768px) {
+        .paqc-calendar-wrapper {
+            width: auto;
+            background-color: #4aadb9;
+            text-align: center;
+            padding: 5rem 1rem;
+            margin: 0;
+            margin-bottom: 1rem;
+        }
+    }
+    /* ------- Sidebar To Do List Classes ------- */
+    
+    .paqc-to-do-list-wrapper h3 {
+        padding: 0.5rem;
+        border-bottom: 1px solid #b4dd1f;
+    }
+    
+    .paqc-to-do-list-wrapper ul {
+        padding: 0.5rem;
+        margin: 0;
+    }
+    
+    .paqc-to-do-list-wrapper li {
+        list-style: none;
+    }
+    
+    .paqc-to-do-list-wrapper h3,
+    .paqc-to-do-list-wrapper a {
+        color: #efeeee;
+        font-weight: 200;
+    }
+    
+    .paqc-to-do-list-wrapper a {
+        text-decoration: none;
+        display: flex;
+        flex-flow: row;
+        padding: 0.3rem 0.1rem;
+    }
+    
+    .paqc-to-do-list-wrapper a:hover {
+        color: #0d5c68;
+        font-weight: 400;
+    }
+    
+    .paqc-to-do-list-wrapper i {
+        align-self: center;
+        padding: 0 0.5rem;
+    }
+    
+    .paqc-to-do-list-elements {
+        padding: 0.5rem 0 0;
+    }
+    /* ------- Icon Classes ------- */
+    
+    .paqc-icon {
+        display: flex;
+        align-items: center;
+        padding: 0rem 1rem;
+    }
+    
+    .paqc-icon-button {
+        display: flex;
+        align-items: center;
+    }
+    
+    .paqc-icon a,
+    .paqc-icon-button button,
+    .paqc-icon-button a {
+        align-self: center;
+        padding: 0rem .5rem;
+        height: 100%;
+    }
+    
+    .paqc-icon,
+    .paqc-icon a,
+    .paqc-icon-button button,
+    .paqc-icon-button a {
+        color: #999999;
+    }
+    
+    .paqc-icon a:hover,
+    .paqc-icon-button button:hover,
+    .paqc-icon-button a:hover {
+        color: #4d4d4d;
+        border: none;
+    }
+    /* ------- Reset Bootstrap Classes -------
+
+
+
+
+p {
+    margin: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+    font-weight: 400;
+    margin: 0;
+}
+
+a {
+    cursor: pointer;
+}
+
+button,
+button:hover,
+button:focus,
+button:active {
+    background: none;
+    outline: none;
+    color: #999999;
+}
+
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
+
+.form-control {
+    margin-bottom: 0.5rem;
+}
+
+.col-form-label {
+    margin-bottom: 0.5rem;
+}
+
+.invalid-feedback {
+    margin: 0;
+    margin-bottom: 0.5rem;
+}
+
+.alert {
+    padding: .75rem 1.25rem;
+}
+
+.nav-link {
+    padding: 0;
+}
+
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-link:focus {
+    border: none !important;
+}
+
+.navbar-dark .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.modal-content {
+    border-radius: 0;
+    border: 0;
+}
+
+.modal-content button {
+    border: none;
+}
+
+@media (min-width: 768px) {
+    .navbar-brand {
+        display: none;
+    }
+}
+
+
+/* ------- Extra Column Classes -------
+
+.paqc-col-md-2-2,
+.paqc-col-lg-4-5,
+.paqc-col-lg-7-5 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+}
+
+@media (min-width: 768px) {
+    .paqc-col-md-2-2 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 18.33333%;
+        flex: 0 0 18.33333%;
+        max-width: 18.33333%;
+    }
+}
+
+@media (min-width: 992px) {
+    .paqc-col-lg-4-5 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 37.5%;
+        flex: 0 0 37.5%;
+        max-width: 37.5%;
+    }
+    .paqc-col-lg-7-5 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 62.5%;
+        flex: 0 0 62.5%;
+        max-width: 62.5%;
+    }
+}
+
+
+/* ------- Main Layout Classes -------
+
+.paqc-structure-column-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #e4e3e2;
+}
+
+.paqc-structure-row-wrapper {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.paqc-layout-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+
+.paqc-centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+@media (min-width: 768px) {
+    .paqc-layout-wrapper {
+        flex-direction: row;
+    }
+}
+
+
+/* ------- Sign In and Sign Up General Classes -------
+
+
+/* Small Screens
+
+.paqc-landing-form-wrapper {
+    padding: 4.5rem 1.5rem 2.6rem;
+    background-color: white;
+}
+
+.paqc-landing-form-content {
+    height: 100%;
+}
+
+.paqc-landing-logo-wrapper {
+    margin-bottom: 3rem;
+}
+
+.paqc-landing-logo-wrapper h3 {
+    margin-bottom: 0.2rem;
+}
+
+.paqc-landing-logo-wrapper h4 {
+    margin-bottom: 0.12rem;
+    color: #808080;
+    font-weight: 300;
+}
+
+.paqc-landing-logo {
+    background-image: url("assets/img/main-logo-md.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 65px;
+    height: 60px;
+}
+
+.paqc-landing-logo-title {
+    padding: 0.4rem 0 0;
+}
+
+.paqc-landing-decor-img {
+    display: none;
+}
+
+.paqc-landing-cancel-btn-wrapper {
+    text-align: center;
+}
+
+.paqc-landing-cancel-btn-wrapper a {
+    text-decoration: none;
+    padding: .65rem 0;
+    display: inline-block;
+    font-size: 0.875rem;
+    color: #b3b3b3;
+}
+
+.paqc-landing-cancel-btn-wrapper a:hover {
+    color: #808080;
+}
+
+
+/* Large Screens
+
+@media (min-width: 992px) {
+    /*
+    Image Source: Al-Fanar Media Org
+    https://www.al-fanarmedia.org/2019/04/what-learning-science-says-about-improving-online-courses/
+  
+    .paqc-landing-decor-img {
+        background-image: url("assets/img/landing-img.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------- Text Color Classes -------
+
+.paqc-teal-txt {
+    color: #17a2b8;
+}
+
+.paqc-teal-txt:hover {
+    color: #808080;
+}
+
+
+/* ------- Text Links Classes -------
+
+.paqc-text-link {
+    padding: .65rem 0;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.paqc-text-link:hover {
+    text-decoration: none;
+}
+
+
+/* ------- Font Sizes Classes -------
+
+.paqc-font-size-std {
+    font-size: 1rem;
+}
+
+.paqc-font-size-sm {
+    font-size: 0.875rem;
+}
+
+.paqc-font-size-xs {
+    font-size: 0.6rem;
+}
+
+
+/* ------- Line Height Adjustment -------
+
+@media (min-width: 992px) {
+    .paqc-line-height-adjustment {
+        padding: 0;
+        line-height: 1.2;
+    }
+}
+
+@media (min-width: 1352px) {
+    .paqc-line-height-adjustment {
+        line-height: 1.5;
+        padding-top: calc(.375rem + 1px);
+        padding-bottom: calc(.375rem + 1px);
+    }
+}
+*/
+    
+    .red {
+        background-color: red;
+    }
+    
+    .green {
+        background-color: green;
+    }
+    
+    .yellow {
+        background-color: yellow;
+    }
+    
+    .blue {
+        background-color: blue;
+    }
+    /* ------- Modules Navbar Classes ------- */
+    /* Small Screens */
+    /* Modules Classes */
+    
+    .paqc-modules-navbar-wrapper {
+        width: 100%;
+    }
+    
+    .navbar {
+        padding: 0;
+    }
+    
+    .paqc-modules-toggler-wrapper,
+    .paqc-lessons-toggler-wrapper {
+        padding: 0.5rem 1rem 0.5rem 1.7rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .paqc-modules-toggler-wrapper .navbar-toggler {
+        border-color: rgba(255, 255, 255, 0.5);
+    }
+    
+    .paqc-modules-navbar,
+    .paqc-lessons-navbar,
+    .paqc-topics-navbar {
+        width: 100%;
+    }
+    
+    .paqc-modules-navbar .paqc-icon button {
+        color: #dbdbdb;
+    }
+    
+    .paqc-modules-navbar .paqc-icon button:hover {
+        color: #4d4d4d;
+    }
+    
+    .paqc-trash-icon {
+        position: absolute;
+        height: 100%;
+        z-index: 10;
+        top: 0;
+        right: 0.6rem;
+    }
+    
+    .paqc-module-btn {
+        position: relative;
+        border: none;
+        width: 100%;
+        font-weight: 300;
+        color: #dbdbdb;
+        background: #17a2b8;
+        border-top: 1px solid #45b5c6;
+        border-bottom: 1px solid #2095a8;
+        padding: 1rem 1rem 1rem 1.7rem;
+        text-align: left;
+    }
+    
+    .paqc-module-btn:hover,
+    .paqc-module-btn:focus {
+        box-shadow: none;
+        border-radius: 0px;
+        outline: none;
+        color: #0d5c68;
+        background-color: #138496;
+    }
+    
+    .paqc-module-btn .fa-plus-circle {
+        padding-right: 0.25rem;
+    }
+    /* Lessons Classes */
+    
+    .paqc-lessons-navbar-wrapper {
+        border-bottom: 2px solid #d6d6d6;
+    }
+    
+    .paqc-lessons-navbar-wrapper .navbar-collapse {
+        width: 100%;
+    }
+    
+    .paqc-lessons-toggler-wrapper {
+        border-bottom: 1px solid #e2e2e2;
+        background-color: #efeeee;
+    }
+    
+    .paqc-lessons-toggler-wrapper .navbar-toggler {
+        border-color: rgba(0, 0, 0, 0.4);
+    }
+    
+    .paqc-lessons-toggler-wrapper .navbar-brand {
+        color: #777777;
+    }
+    
+    .paqc-lesson-btn {
+        position: relative;
+        width: 100%;
+        border: none;
+        text-align: left;
+        border-bottom: 1px solid #e2e2e2;
+        background-color: #efeeee;
+        padding: 1rem 0rem 1rem 1.7rem;
+    }
+    
+    .paqc-lesson-btn:hover,
+    .paqc-lesson-btn:focus {
+        background-color: #f4f4f4;
+        color: #606060;
+    }
+    
+    .paqc-lesson-btn .paqc-icon:hover {
+        color: #4d4d4d;
+    }
+    
+    .paqc-lesson-btn .fa-plus-circle {
+        padding-right: 0.25rem;
+    }
+    
+    .paqc-lesson-content-wrapper {
+        padding: 0;
+        background-color: #f1f1f1;
+        margin-bottom: 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    /* Topics Classes */
+    
+    .paqc-topics-navbar-wrapper {}
+    
+    .paqc-topics-content-wrapper {
+        padding: 0rem 1rem;
+    }
+    
+    .paqc-topic-content {
+        border-top: 1px solid #cccccc;
+        padding: 2rem 1rem;
+    }
+    
+    .paqc-topic-content h2 {
+        margin-bottom: 1.5rem;
+    }
+    
+    .paqc-topic-btn {
+        border: none;
+        padding: 1rem 1.5rem;
+    }
+    
+    .paqc-topic-btn:hover {
+        background-color: #e2e2e2;
+    }
+    /* Medium Screens */
+    
+    @media (min-width: 768px) {
+        .navbar {
+            padding: 0;
+        }
+        .navbar-expand-md {
+            flex-flow: column;
+        }
+        .paqc-modules-toggler-wrapper {
+            display: none;
+        }
+        .paqc-lessons-navbar-wrapper {
+            border: none;
+        }
+        .paqc-lessons-toggler-wrapper {
+            display: none;
+        }
+        .paqc-lessons-navbar .collapse {
+            display: none !important;
+        }
+        .paqc-lessons-navbar .show {
+            display: block !important;
+        }
+        .paqc-lesson-btn {
+            border: 1px solid #cccccc;
+            border-top: 2px solid #c1c1c1;
+            margin-bottom: 0.35rem;
+        }
+        .paqc-lesson-content-wrapper {
+            margin-bottom: 0.35rem;
+            background-color: #efeeee;
+        }
+    }

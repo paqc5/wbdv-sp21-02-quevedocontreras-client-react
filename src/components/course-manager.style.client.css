@@ -1,0 +1,270 @@
+/* ------- Course Manager Classes ------- */
+
+.paqc-course-manager-wrapper {}
+
+
+/* ------- Course Addition Tab Classes ------- */
+
+
+/* Small Screens */
+
+.paqc-add-course-tab {
+    padding: 0.85rem 0.45rem 0.85rem 1.5rem;
+}
+
+.paqc-add-course-title {
+    display: none;
+    vertical-align: middle;
+}
+
+.paqc-add-course-title h3 {
+    height: 100%;
+}
+
+.paqc-add-course-tab .paqc-icon {
+    padding: 0rem 0.65rem;
+    align-self:center;
+}
+.paqc-add-course-input input {
+    margin: 0 !important;
+}
+
+.paqc-add-course-input .paqc-icon {
+    color: #17a2b8;
+}
+
+.paqc-add-course-input .paqc-icon:hover {
+    color: #0d5c68;
+}
+
+
+/* Medium Screens */
+
+@media (min-width: 768px) {
+    .paqc-add-course-tab {
+        padding-left: 1rem;
+    }
+}
+
+
+/* Large Screens */
+
+@media (min-width: 1200px) {
+    .paqc-add-course-title {
+        display: block;
+    }
+}
+
+
+/* ------- Course Row Classes ------- */
+
+
+/* Small Screens */
+
+.paqc-course-table {
+    position: relative;
+    height: 100%;
+}
+
+.paqc-course-grid {
+    position: relative;
+    height: 100%;
+}
+
+.paqc-course-row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: #efeeee;
+    border: 1px solid #cccccc;
+    margin-bottom: 10px;
+}
+
+.paqc-course-row:hover {
+    background-color: #f4f4f4;
+}
+
+.paqc-course-row a {
+    display: flex;
+    width: 100%;
+}
+
+.paqc-course-row a:hover {
+    background-color: #f4f4f4;
+}
+
+.paqc-course-row .row {
+    width: 100%;
+}
+
+.paqc-course-row .paqc-course-info input {
+    width: 100%;
+    margin: 0.35rem 0 0.65rem;
+}
+
+.paqc-course-row .paqc-course-info-primary div {
+    min-width: 100%;
+}
+
+.paqc-course-top-color {
+    position: relative;
+    height: 100%;
+    width: 13px;
+}
+
+.paqc-course-info {
+    flex-basis: 0;
+    flex-grow: 1;
+    padding: 1rem 0rem;
+}
+
+.paqc-course-info h3 {
+    margin-bottom: 0.25rem;
+    color: #333;
+}
+
+.paqc-course-info-primary h4,
+.paqc-course-info-secondary h4 {
+    color: #999999;
+}
+
+.paqc-course-info-primary h4 {
+    padding: 0 0.5rem;
+    border-left: 1px solid #cccccc;
+}
+
+.paqc-course-info-secondary h4 {
+    margin-bottom: 0.15rem;
+}
+
+.paqc-course-info-secondary .row {
+    text-align: center;
+}
+
+.paqc-course-info-secondary .col-6 {
+    border-left: 1px solid #cccccc;
+}
+
+.paqc-course-info-secondary {
+    display: none;
+}
+
+.paqc-course-info-last-modified {
+    display: none;
+}
+
+.paqc-course-edit-buttons {
+    padding-right: .65rem;
+}
+
+.paqc-course-edit-icons {
+    display: flex;
+}
+
+
+/* Medium Screens */
+
+@media (min-width: 768px) {
+    .paqc-course-row {
+        flex-direction: column;
+    }
+    .paqc-course-row a {
+        position: relative;
+        display: block;
+    }
+    .paqc-course-top-color {
+        height: 15px;
+        width: 100%;
+    }
+    .paqc-course-info-primary h4 {
+        padding: 0 0.3rem;
+    }
+    .paqc-course-info-secondary {
+        display: block;
+    }
+}
+
+
+/* Large Screens */
+
+@media (min-width: 1200px) {
+    .paqc-course-info-primary h4 {
+        padding: 0 0.5rem;
+    }
+    .paqc-course-info-last-modified {
+        display: block;
+    }
+}
+
+
+/* ------- Course Grid Classes ------- */
+
+.card {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+}
+
+.paqc-course-card {
+    border-radius: 0;
+    padding: 0.10rem;
+}
+
+.paqc-course-card .paqc-course-info {
+    min-height: 80px;
+}
+
+.paqc-course-card .paqc-course-info h3 {}
+
+.paqc-course-card .paqc-course-info h4 {
+    padding: 0 0.25rem;
+}
+
+.paqc-course-info-card h4 {
+    margin-bottom: 0.25rem;
+}
+
+.paqc-card-body {
+    min-height: 100% !important;
+    background-color: #efeeee;
+    border: 1px solid #cccccc;
+}
+
+.paqc-card-body:hover {
+    background-color: #f4f4f4;
+}
+
+.paqc-card-body .paqc-course-info {
+    padding: 0 0 1.2rem;
+}
+
+.paqc-card-body .paqc-course-info input {
+    width: 100%;
+    margin: 0.35rem 0 0.65rem;
+}
+
+.paqc-card-body .paqc-course-info-primary div {
+    min-width: 100%;
+}
+
+.paqc-course-info-card h4 {
+    color: #999999;
+}
+
+.paqc-course-info-card .col-6 {}
+
+
+/* ------- Background Color Classes ------- */
+
+.paqc-green-light-bg {
+    background-color: #85b011;
+}
+
+.paqc-white-bg {
+    background-color: white;
+}
+
+.paqc-coral-bg {
+    background-color: #f0764a;
+}
